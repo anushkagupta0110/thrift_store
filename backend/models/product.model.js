@@ -80,8 +80,6 @@ const ProductShcema = mongoose.Schema(
     }
 )
 
-
-
 // exporting product
 const Product = mongoose.model("Product", ProductShcema);
 export default Product;
