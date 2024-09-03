@@ -9,10 +9,8 @@ const dbConnection = async ()=>
     const DB = process.env.DB;
     try
     {
-        await mongoose.connect(DB).then( ()=>
-        {
-            console.log("database is connected successfully");
-        })
+        await mongoose.connect(DB);
+        console.log("database is connected successfully");
     }
     catch(error)
     {
