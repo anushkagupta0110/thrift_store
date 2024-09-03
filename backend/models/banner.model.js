@@ -25,6 +25,6 @@ const BannerSchema = mongoose.Schema(
     }
 )
 
-// exporting banner
+// creating mongoose model and exporting banner
 const Banner = mongoose.model("Banner", BannerSchema);
 export default Banner;

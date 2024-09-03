@@ -80,6 +80,9 @@ const ProductShcema = mongoose.Schema(
     }
 )
 
+// creating text index for full-text search
+ProductShcema.index({"$**": 'text'});
+
 // exporting product
 const Product = mongoose.model("Product", ProductShcema);
 export default Product;

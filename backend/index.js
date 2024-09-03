@@ -9,8 +9,9 @@ dotenv.config();
 // creating server using PORT
 const PORT = process.env.PORT;
 
-app.listen(PORT, ()=>
+// starting the server and listening on port 8000
+app.listen(PORT, () =>
 {
-    console.log(`server is running on port ${PORT}`);
+    console.log(`Server is running on port ${PORT}`);
     dbConnection();
-})
+});
